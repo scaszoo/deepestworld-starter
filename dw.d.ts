@@ -604,6 +604,8 @@ declare module 'dw' {
         l: number
         x: number
         y: number
+
+        charDbId?: number
       }
 
       export interface Character extends LivingEntity {

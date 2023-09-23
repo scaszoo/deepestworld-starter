@@ -1,4 +1,4 @@
-const attackMode = false
+const attackMode = true
 
 setInterval(function () {
   if (!attackMode) {
@@ -15,7 +15,7 @@ setInterval(function () {
   dw.setTarget(target.id)
 
   const skillIndex = dw.character.skills.findIndex(
-    (skill) => skill && skill.md === 'attackRune'
+    (skill) => skill && skill.md === 'attackRune' // physbolt1 / attackRun
   )
   if (skillIndex === -1) {
     // No attackRune found
